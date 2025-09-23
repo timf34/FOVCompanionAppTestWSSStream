@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # Install deps
-RUN pip install websockets
+RUN pip install websockets aiohttp
 
 # Copy your server code
 WORKDIR /app
