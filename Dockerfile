@@ -5,7 +5,7 @@ RUN pip install websockets
 
 # Copy your server code
 WORKDIR /app
-COPY test_ws_server.py .
+COPY main.py .
 
 # Run the WebSocket server
-CMD ["python", "test_ws_server.py"]
+CMD ["python", "main.py"]
